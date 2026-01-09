@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emirp Primes - Mathematical Elegance</title>
+</head>
+
+<body>
+  <!-- Animated particles background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <div class="logo">EMIRP PRIMES</div>
+      <nav>
+        <button class="btn" onclick="scrollToSection('calculator')">Calculator</button>
+        <button class="btn" onclick="scrollToSection('info')">Learn More</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <div class="container">
+    <!-- Hero section -->
+    <section class="hero">
+      <h1 class="hero-title">EMIRP PRIMES</h1>
+      <p class="hero-subtitle">Discover the beauty of reversible prime numbers</p>
+    </section>
+
+    <!-- Main calculator card -->
+    <section class="main-card" id="calculator">
+      <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Interactive Emirp Calculator</h2>
+
+      <div class="controls">
+        <div class="input-group">
+          <input type="text" class="input-field" id="inputValue" placeholder=" " value="20">
+          <label class="input-label">Enter n or range [start, end]</label>
+        </div>
+
+        <div class="toggle-container">
+          <span>Single Value</span>
+          <div class="toggle-switch active" id="returnToggle">
+            <div class="toggle-slider"></div>
+          </div>
+          <span>Array</span>
+        </div>
+
+        <button class="btn" onclick="calculateEmirps()">Calculate Emirps</button>
+      </div>
+
+      <div class="results">
+        <h3 class="results-title">Results</h3>
+        <div class="emirp-display" id="resultsDisplay">
+          <p style="text-align: center; color: var(--text-secondary);">Click "Calculate Emirps" to see results</p>
+        </div>
+        <div class="loader" id="loader"></div>
+      </div>
+    </section>
+
+    <!-- Information section -->
+    <section class="main-card" id="info" style="margin-top: 3rem;">
+      <h2 style="margin-bottom: 2rem;">What are Emirp Primes?</h2>
+      <p style="line-height: 1.8; margin-bottom: 1rem;">
+        An <strong>emirp</strong> (prime spelled backwards) is a prime number that results in a different prime when its decimal digits are reversed.
+        For example, 13 is an emirp because when reversed it becomes 31, which is also prime.
+      </p>
+      <p style="line-height: 1.8;">
+        The first few emirps are: 13, 17, 31, 37, 71, 73, 79, 97, 107, 113, 149, 157, 167, 179, 199, 311, 337, 347, 359, 389...
+      </p>
+    </section>
+  </div>
+
+  <!-- 3D rotating cube -->
+  <div class="cube-container">
+    <div class="cube">
+      <div class="cube-face">13</div>
+      <div class="cube-face">31</div>
+      <div class="cube-face">17</div>
+      <div class="cube-face">71</div>
+      <div class="cube-face">37</div>
+      <div class="cube-face">73</div>
+    </div>
+  </div>
+</body>
+
+</html>
